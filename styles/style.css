@@ -3,6 +3,7 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
 }
 
 
@@ -17,8 +18,17 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-llp: #EE4997;
 }
 
+
+a  {
+	text-decoration: none;
+}
+
+li  {
+	list-style-type: none;
+}
 
 
 
@@ -29,3 +39,52 @@
 
 /* jouw code */
 
+header nav {
+	display: flex;
+	width: 100%;
+	background-color: white;
+
+	/* Lijnt alle children (items in de nav) horizontaal uit */
+	align-items: center;
+
+
+}
+
+header nav a:first-of-type {
+	width: 30%;
+	display: inline-flex;
+	margin-left: 1rem;
+	margin-right: auto;
+}
+
+
+header nav a:nth-of-type(1) img {
+	width: 100%;
+}
+
+header nav a:nth-of-type(2) {
+	color: var(--color-llp);
+	padding: .5rem;
+	border-radius: .5rem;
+	border: solid var(--color-llp) 1px;
+
+}
+
+header nav button {
+	aspect-ratio: 1/1;
+	width: 3rem;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: .5rem;
+	background-color: transparent;
+	border: none;
+	margin: 0 1rem;
+}
+
+header nav button span {
+	display: block;
+	width: 55%;
+	height: 2px;
+	background-color: var(--color-llp);
+}
