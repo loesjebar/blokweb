@@ -97,26 +97,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Ik heb de nav al een beetje gemaakt van de home pagina, en redelijk oke in mijn hoofd hoe ik alles wil aan gaan pakken. Ik hoop wel dat allles me lukt. De opdrachten gaan goed maar die toepassen aan mijn eigen site vind ik lastig. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  Femma:
+  - vraag over de taal, wanneer het een nederlandse site is dus je html taal nederlans is maar een bepaalde titel engels is. Voor de screenreader zou het fijner zijn als dat een goede uitspraak was. We hebben uitleg gekregen dat je de taal voor een h kan aanpassen.
+
+  - Wanneer gebruik ik grid en wanneer gebruik ik flexbox? Grid is iets meer in je eigen controle, als je alles dezelfde grote/ruimte wilt. Als je meer de tekst de vorm wilt laten bepalen kies je flexbox.
+
+
+  Nina: 
+  - Ik wil mijn site verbeteren maar is dat wel de opdracht? Nee, je moet een site namaken en niet zozeer bezig zijn met de vormgeving. 
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - andere pagina gekozen, nu de producten pagina en de individuele product pagina wanneer je er op klikt. Logo zou H1 zijn 
+  in home pagina maar de H1 is gewoon de tekst bij de andere. Er zijn toch wat dingen in mijn site wat een divs zouden zijn. Dus ik heb geleerd dat je toch divs kan gebruiken wanneer het niet anders kan. We hebben geleerd hoe je van img een h1 maakt. Wat het verschil is tussen buttons en links.
+
 
 </details>
 

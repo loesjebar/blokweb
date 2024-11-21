@@ -7,7 +7,9 @@
 }
 
 
-
+body {
+	box-sizing: border-box;
+}
 
 
 
@@ -19,6 +21,8 @@
 	--color-text:#111;
 	--color-background:#eee;
 	--color-llp: #EE4997;
+	--color-blue: lightblue;
+
 }
 
 
@@ -87,4 +91,16 @@ header nav button span {
 	width: 55%;
 	height: 2px;
 	background-color: var(--color-llp);
+}
+
+
+
+/* Main */
+
+main section img {
+	width: 100%;
+}
+
+main article {
+	width: 100%;
 }
