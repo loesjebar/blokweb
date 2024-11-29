@@ -114,7 +114,6 @@ main section:first-of-type h1{
 	position:absolute;
 	bottom:2em;
 	font-family: PetShopFont;
-
 	right:1em;
 	left:1em;
 }
@@ -124,8 +123,12 @@ main section:first-of-type p{
 	bottom:1em;
 	right:1em;
 	left:1em;
+	inline
 }
 main article {
 	width: 100%;
 }
 
+main section:nth-of-type(3) img{
+	width: 30%;
+}
