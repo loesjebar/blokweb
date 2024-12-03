@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @font-face {
 	font-family: PetShopFont;
 	src: url("../fonts/Baloo-Regular.ttf");
@@ -27,6 +30,8 @@ body {
 	--color-background:#eee;
 	--color-llp: #EE4997;
 	--color-blue: lightblue;
+	--footer-bgcolor: #0D294F;
+	--lps-plain-text: "Nunito"; 
 
 }
 
@@ -40,7 +45,9 @@ li  {
 }
 
 
-
+p, h2 {
+	font-family: var(--lps-plain-text);
+}
 
 /****************/
 /* JOUW STYLING */
@@ -101,34 +108,106 @@ header nav button span {
   
 
 /* Main */
-main section:first-of-type{
-position: relative;
+/* hulp van studentassistent*/
+  
+  div h1 {
+	position: absolute;
+	font-family: (PetShopFont);
+  }
+  
+  /* bron van https://cssgradient.io/*/
+
+  div h1:nth-of-type(1) {
+	color: white;
+	-webkit-text-stroke: .4rem rgb(23, 26, 79); /* buitenlijn kleur */
+ font-family: PetShopFont;
 }
-
-main section:first-of-type img {
-
-	width: 100%;
-}
-main section:first-of-type h1{
-
-	position:absolute;
-	bottom:2em;
+ /* bron van https://cssgradient.io/*/
+  
+  div h1:nth-of-type(2) {
+	color: white; /* tekst kleur */
 	font-family: PetShopFont;
-	right:1em;
-	left:1em;
-}
-main section:first-of-type p{
+ }
+/* hulp van studentassistent*/
 
-	position:absolute;
-	bottom:1em;
-	right:1em;
-	left:1em;
-	inline
+
+main h2:first-of-type{
+	font-family: ();
+	color: rgb(23, 26, 79);
 }
+
+
+
+main section:nth-of-type(1) {
+	background: rgb(2,0,36);
+	background: linear-gradient(-90deg, #0974B7 0%, #80C0DD 100%);
+		padding: 2rem;
+}
+
+
+main section:nth-of-type(1) div {
+	top: 0;
+}
+
+main section:nth-of-type(1) p {
+	margin-top: 3rem;
+}
+
 main article {
 	width: 100%;
 }
 
 main section:nth-of-type(3) img{
-	width: 30%;
+	width:80%;
+}
+/* Anouk heeft me heel lief geholpen met dit stuk*/
+main section:nth-of-type(3) ul{
+	padding: 0;
+	display:grid;
+	grid-template-columns: repeat(2,1fr);
+	gap:20px;
+	align-items: center;
+}
+/* Anouk heeft me heel lief geholpen met dit stuk*/
+
+main section:nth-of-type(3) ul li {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	height: 15rem;
+}
+
+
+
+main section:nth-of-type(3) ul li a {
+	margin-top: auto;
+}
+
+li {
+	/* om de p's en buttons onder elkaar en in het midden van de sections te positioneren */
+	display:grid;
+	place-content:center;
+	gap:1em;
+  }
+  
+  li p {
+	width:10em;
+	margin:0;
+	padding:.5em;
+	
+	text-align:center;
+  }
+
+main section:nth-of-type(3) ul li a:first-of-type{
+	background-color: #EE4997;
+	border-radius: 2em;
+	padding: 0.3em;
+	color: white;
+	text-align: center;
+}
+
+footer {
+
+	background-color: var(--footer-bgcolor);
+	margin-top: 2rem;;
 }
