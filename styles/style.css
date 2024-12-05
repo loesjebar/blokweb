@@ -17,8 +17,140 @@
 
 body {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
+body > section  {
+	width:100vw;
+	opacity: 0;
+	pointer-events: none;
+	background-color: whitesmoke;
+	height:100vh;
+	position: absolute;
+	top: 0;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	z-index: 1;
+	transition: .5s;
+}
+
+body > section.active {
+	opacity: 1;
+	pointer-events: all;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+body > section article {
+	display: flex
+}
+
+
+
+body > section ul {
+	display: flex;
+	flex-direction: column;
+}
+
+body > section ul:nth-of-type(2) {
+	margin-top: 3rem;
+}
+
+body > section ul li a {
+	display: block;
+}
+
+body > section ul:nth-of-type(1) li a {
+	padding: 1rem;
+	border-top: solid .5px #ccc;
+	border-bottom: solid .5px #ccc;
+}
+
+body > section ul:nth-of-type(2) {
+	display: flex;
+	text-align: center;
+}
+
+body > section ul:nth-of-type(2) li:nth-of-type(1) a,
+body > section ul:nth-of-type(2) li:nth-of-type(2) a{
+	padding: 1rem;
+	width: 100%;
+	display: inline-block;
+	border-top: solid .5px #ccc;
+	border-bottom: solid .5px #ccc;
+	
+}
+
+body > section ul:nth-of-type(2) li:nth-of-type(3) a,
+body > section ul:nth-of-type(2) li:nth-of-type(4) a {
+	margin: 0 auto;
+}
+
+
+
+body > section ul:nth-of-type(2) li:nth-of-type(3) a {
+	margin-top: 2rem
+}
+
+img {
+	width: 100%;
+}
+
+body > section article {
+    display: flex;
+	width: 100%;
+	justify-content: space-between;
+    flex-direction: row; /* Zorg ervoor dat de inhoud onder elkaar komt */
+    align-items: center; /* Optioneel: centreer de inhoud horizontaal */
+    padding: 1rem; /* Voeg wat padding toe om ruimte te creëren */
+}
+
+body > section article img  {
+	width: 20%;
+}
+
+body > section ul li a {
+	color: #EE4997;
+}
+
+body > section ul:nth-of-type(2) li:nth-of-type(3) a{
+	display: block;
+	width: 2rem;
+}
+
+body > section ul:nth-of-type(2) li:nth-of-type(4) a{
+	display: block;
+	width: 2rem;
+}
+
+img {
+    width: 100%; /* Stel de breedte van de afbeelding in op 20% */
+    aspect-ratio: 1/1; /* Behoud de verhoudingen van de afbeelding */
+}
+
+body > section article button {
+    width: auto; /* Laat de breedte van de knop automatisch bepalen op basis van de inhoud */
+    display: inline-flex; /* Zorg ervoor dat de knop alleen zoveel ruimte inneemt als nodig */
+    align-items: center; /* Centreer de inhoud binnen de knop */
+    justify-content: center; /* Centreer het SVG-pictogram in de knop */
+    padding: 0.5rem; /* Voeg wat padding toe om ruimte rond de knop te creëren */
+}
+
+body > section article button svg {
+    width: 2rem; /* Stel de grootte van de SVG in (je kunt dit aanpassen naar behoefte) */
+    height: 2rem; /* Zorg ervoor dat de hoogte van het SVG-pictogram dezelfde is als de breedte */
+	fill: red;
+}
 
 
 /*********************/
@@ -68,14 +200,14 @@ header nav {
 
 header nav a:first-of-type {
 	width: 30%;
-	display: inline-flex;
 	margin-left: 1rem;
 	margin-right: auto;
 }
 
 
 header nav a:nth-of-type(1) img {
-	width: 100%;
+	width: 50%;
+	height:auto;
 }
 
 header nav a:nth-of-type(2) {
@@ -157,6 +289,11 @@ main article {
 	width: 100%;
 }
 
+main section {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 main section:nth-of-type(3) img{
 	width:80%;
 }
@@ -165,7 +302,8 @@ main section:nth-of-type(3) ul{
 	padding: 0;
 	display:grid;
 	grid-template-columns: repeat(2,1fr);
-	gap:20px;
+	gap: 1rem;
+	padding: 1rem;
 	align-items: center;
 }
 /* Anouk heeft me heel lief geholpen met dit stuk*/
@@ -175,6 +313,7 @@ main section:nth-of-type(3) ul li {
 	flex-direction: column;
 	gap: 0;
 	height: 15rem;
+	align-items: center;
 }
 
 
@@ -183,7 +322,11 @@ main section:nth-of-type(3) ul li a {
 	margin-top: auto;
 }
 
-li {
+svg {
+	width: 100%;
+}
+
+main section ul li {
 	/* om de p's en buttons onder elkaar en in het midden van de sections te positioneren */
 	display:grid;
 	place-content:center;
@@ -200,11 +343,12 @@ li {
 
 main section:nth-of-type(3) ul li a:first-of-type{
 	background-color: #EE4997;
-	border-radius: 2em;
-	padding: 0.3em;
-	color: white;
-	text-align: center;
+    border-radius: 2em;
+    padding: .3rem 1rem;
+    color: white;
+    text-align: center;
 }
+
 
 footer {
 
