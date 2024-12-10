@@ -12,6 +12,42 @@
 		height: auto;
 	}
 }
+
+@keyframes draaiennn {
+	0% {
+		transform: rotate(0deg);
+		/* Begin de rotatie bij 0 graden */
+	}
+
+	100% {
+		transform: rotate(360deg);
+		/* Draai de afbeelding 360 graden */
+	}
+}
+
+@keyframes wiggle {
+
+	0% {
+		transform: rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(-5deg);
+	}
+
+	50% {
+		transform: rotate(5deg);
+	}
+
+	75% {
+		transform: rotate(-5deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
 /*hulp van student assistent*/
 /**************/
 /* CSS REMEDY */
@@ -23,11 +59,72 @@
 	margin: 0;
 }
 
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text: #111;
+	--color-background: #eee;
+	--color-llp: #EE4997;
+	--color-blue: lightblue;
+	--footer-bgcolor: #0D294F;
+	--lps-plain-text: "Nunito";
+
+}
+
 
 body {
 	box-sizing: border-box;
 	overflow-x: hidden;
 	/* Voorkomt horizontaal scrollen op de pagina*/
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+p,
+h2 {
+	font-family: var(--lps-plain-text);
+}
+
+h3 {
+	font-family: var(--lps-plain-text);
+	color: #EE4997;
+}
+
+h4 {
+	font-family: var(--lps-plain-text);
+	color: #0D294F;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+}
+
+img {
+	width: 100%;
+	aspect-ratio: 1/1;
+	/* Behoud de verhoudingen van de afbeelding */
+}
+
+svg {
+	width: 100%;
+}
+
+body>section article {
+	display: flex
 }
 
 /* hulp van studenassistent voor hamburger menu*/
@@ -49,26 +146,6 @@ body>section.active {
 	pointer-events: all;
 }
 
-ul {
-	padding: 0;
-}
-
-li {
-	list-style-type: none;
-
-}
-
-button {
-	background-color: transparent;
-	border: none;
-}
-
-body>section article {
-	display: flex
-}
-
-
-
 body>section ul {
 	display: flex;
 	flex-direction: column;
@@ -82,7 +159,7 @@ body>section ul li a {
 	display: block;
 }
 
-body>section ul:nth-of-type(1) li a {
+body>section ul:first-of-type li a {
 	padding: 1rem;
 	border-top: solid .5px #ccc;
 	border-bottom: solid .5px #ccc;
@@ -106,7 +183,7 @@ body>section ul:nth-of-type(2) li:nth-of-type(2) a {
 body>section ul:nth-of-type(2) li:nth-of-type(3) a,
 body>section ul:nth-of-type(2) li:nth-of-type(4) a {
 	margin: 0 auto;
-} 
+}
 
 
 
@@ -145,12 +222,6 @@ body>section ul:nth-of-type(2) li:nth-of-type(4) a {
 	width: 2rem;
 }
 
-img {
-	width: 100%;
-	aspect-ratio: 1/1;
-	/* Behoud de verhoudingen van de afbeelding */
-}
-
 body>section article button {
 	width: auto;
 	/* Laat de breedte van de knop automatisch bepalen op basis van de inhoud */
@@ -173,45 +244,6 @@ body>section article button svg {
 }
 
 
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text: #111;
-	--color-background: #eee;
-	--color-llp: #EE4997;
-	--color-blue: lightblue;
-	--footer-bgcolor: #0D294F;
-	--lps-plain-text: "Nunito";
-
-}
-
-
-a {
-	text-decoration: none;
-}
-
-li {
-	list-style-type: none;
-}
-
-
-p,
-h2 {
-	font-family: var(--lps-plain-text);
-}
-
-h3 {
-	font-family: var(--lps-plain-text);
-	color: #EE4997;
-}
-
-h4 {
-	font-family: var(--lps-plain-text);
-	color: #0D294F;
-}
-
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -222,7 +254,6 @@ header nav {
 	display: flex;
 	width: 100%;
 	background-color: white;
-
 	/* Lijnt alle children (items in de nav) horizontaal uit */
 	align-items: center;
 
@@ -236,7 +267,6 @@ header nav a:first-of-type {
 
 }
 
-
 header nav a:first-of-type img {
 	width: 50%;
 }
@@ -246,20 +276,6 @@ header nav a:nth-of-type(1) img {
 	animation: draaiennn 18s linear infinite;
 	/* De afbeelding draait elke 5 seconden continu */
 }
-
-@keyframes draaiennn {
-	0% {
-		transform: rotate(0deg);
-		/* Begin de rotatie bij 0 graden */
-	}
-
-	100% {
-		transform: rotate(360deg);
-		/* Draai de afbeelding 360 graden */
-	}
-}
-
-
 
 /* sign in button*/
 header nav a:nth-of-type(2) {
@@ -289,8 +305,6 @@ header nav button span {
 	background-color: var(--color-llp);
 }
 
-
-
 /* Main */
 /* hulp van studentassistent*/
 
@@ -298,7 +312,6 @@ div h1 {
 	position: absolute;
 	font-family: PetShopFont;
 }
-
 /* bron van https://cssgradient.io/*/
 
 div h1:nth-of-type(1) {
@@ -307,38 +320,33 @@ div h1:nth-of-type(1) {
 	/* buitenlijn kleur */
 	font-family: PetShopFont;
 }
-
 /* bron van https://cssgradient.io/*/
 
 div h1:nth-of-type(2) {
 	color: white;
-	/* tekst kleur */
 	font-family: PetShopFont;
 }
 
 /* hulp van studentassistent*/
 
-
 main h2:first-of-type {
+	color: #EE4997;
 	font-family: PetShopFont;
-	color: rgb(23, 26, 79);
 }
 
 
 
-main section:nth-of-type(1) {
+main section:first-of-type {
 	background: rgb(2, 0, 36);
 	background: linear-gradient(-90deg, #0974B7 0%, #80C0DD 100%);
 	padding: 2rem;
 }
 
-
-main section:nth-of-type(1) div {
-	top: 0;
-}
-
-main section:nth-of-type(1) p {
-	margin-top: 3rem;
+main section ul li {
+	/* om de p's en buttons onder elkaar en in het midden van de sections te positioneren */
+	display: grid;
+	place-content: center;
+	gap: 1em;
 }
 
 main article {
@@ -348,6 +356,34 @@ main article {
 main section {
 	box-sizing: border-box;
 	margin: 0;
+}
+
+main section:nth-of-type(1) div {
+	top: 0;
+}
+
+main section:nth-of-type(1) p {
+	margin-top: 3rem;
+}
+
+
+main section:nth-of-type(2) select {
+	border: none;
+}
+
+main section:nth-of-type(2) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	padding-top: 1rem;
+}
+
+main section:nth-of-type(2) div {
+	border: solid 2px #EE4997;
+	padding: .5rem 1rem;
+	color: #EE4997;
+	border-radius: .8rem;
 }
 
 main section:nth-of-type(3) img {
@@ -377,24 +413,9 @@ main section:nth-of-type(3) ul li {
 
 }
 
-
-
 main section:nth-of-type(3) ul li a {
 	margin-top: auto;
 }
-
-svg {
-	width: 100%;
-}
-
-main section ul li {
-	/* om de p's en buttons onder elkaar en in het midden van de sections te positioneren */
-	display: grid;
-	place-content: center;
-	gap: 1em;
-}
-
-
 
 main section:nth-of-type(3) ul li a:first-of-type {
 	background-color: #EE4997;
@@ -403,38 +424,13 @@ main section:nth-of-type(3) ul li a:first-of-type {
 	color: white;
 	text-align: center;
 	transition: background-color 0.3s;
-  }
-  
-  main section:nth-of-type(3) ul li a:first-of-type:hover {
+}
+
+main section:nth-of-type(3) ul li a:first-of-type:hover {
 	background-color: #0D294F;
-  }
-
-main section:nth-of-type(2) select {
-	border: none;
 }
 
-main section:nth-of-type(2) {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1rem;
-	padding-top: 1rem;
-}
-
-main section:nth-of-type(2) div {
-	border: solid 2px #EE4997;
-	padding: .5rem 1rem;
-	color: #EE4997;
-	border-radius: .8rem;
-}
-
-main h2:first-of-type {
-	color: #EE4997;
-	/* Roze kleur voor de "Showing 12 items" tekst */
-}
-
-
-option {
+[class="tweedepagina"] article option {
 	color: red;
 }
 
@@ -442,7 +438,7 @@ footer {
 
 	background-color: var(--footer-bgcolor);
 	margin-top: 2rem;
-	
+
 }
 
 footer {
@@ -460,6 +456,8 @@ footer section {
 footer h2 {
 	font-size: 1.5rem;
 	margin-bottom: 10px;
+	color: white;
+	animation: wiggle 4s infinite ease-in-out;
 }
 
 footer ul {
@@ -487,85 +485,114 @@ footer a {
 	color: #0066cc;
 	text-decoration: none;
 }
-   /* komt van bron: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect */
-footer h2 {
-	color: white;
-	animation: wiggle 4s infinite ease-in-out;
-}
-@keyframes wiggle{
-	
-		0% {
-			transform: rotate(0deg);
-		}
-	
-		25% {
-			transform: rotate(-5deg);
-		}
-	
-		50% {
-			transform: rotate(5deg);
-		}
-	
-		75% {
-			transform: rotate(-5deg);
-		}
-	
-		100% {
-			transform: rotate(0deg);
-		}
-}
-footer ul li a {
-	color: white;
-}
+
+/* komt van bron: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect */
 
 
-article.tweedepagina {
+/* [class="tweedepagina"] article {
 	width: 100vw;
-	padding: 1rem
+	padding: 1rem; 
 	border:3rem;
 	border-radius:solid;
-	background-color: #f0f0f0;
+} */
+
+
+[class="tweedepagina"] ul {
+
+	display: flex;
+	flex-direction: column;
 }
-li p h2 h3{
-	margin:0;
+
+[class="tweedepagina"] ul li {
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem;
+	flex-direction: column;
+	background-color: #EE4997;
+}
+
+[class="tweedepagina"] ul li:nth-of-type(2) {
+    background: linear-gradient(188deg, #BFE7FA 0%, #BFE7FA 56%, #B1E3FA 56%, #B1E3FA 100%);
+}
+
+[class="tweedepagina"] ul li:nth-of-type(3) {
+	background: linear-gradient(184deg, #FFB7D4 0%, #FFB7D4 46%, #FFA5C9 46%, #FFA5C9 100%);
+}
+[class="tweedepagina"] ul li:nth-of-type(4) {
+	background: linear-gradient(12deg, rgb(34, 100, 176) 0%, rgb(34, 100, 176) 47%, rgb(78, 131, 192) 47%, rgb(78, 131, 192) 100%);
+}
+[class="tweedepagina"] ul li:nth-of-type(5) {
+	background: linear-gradient(184deg, #FFB7D4 0%, #FFB7D4 46%, #FFA5C9 46%, #FFA5C9 100%);
+}
+[class="tweedepagina"] ul li:nth-of-type(6) {
+    background: linear-gradient(188deg, #BFE7FA 0%, #BFE7FA 56%, #B1E3FA 56%, #B1E3FA 100%);
+}
+[class="tweedepagina"] ul li img {
+
+	border-radius: 1rem;
+	border: solid .5rem var(--color-blue);
+	object-fit: cover;
+	width: 10rem;
+	aspect-ratio: 1/1;
+}
+
+[class="tweedepagina"] ul li p {
+	text-align: center;
+	color: white;
+}
+[class="tweedepagina"] h4 {
+	text-align: center;
+	color: white;
+}
+li p h2 h3 {
+	margin: 0;
 	padding: .5rem;
-	text-align:left;
+	text-align: left;
 
 }
+
 /* hulp van anouk*/
-footer section form{
+footer section form {
 	margin-top: 1em;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	gap: .3em;
 }
 
-footer section form label input:user-invalid{
-	background-color: rgba(255, 0, 0, 0.315);
+footer section form label input:user-invalid {
+	background-color: red;
 }
 
-footer section form label input:valid{
-	background-color: rgba(0, 255, 132, 0.315);
+footer section form label input:valid {
+	background-color: green;
 }
 
-footer section form label input::placeholder{
+footer section form label input::placeholder {
 	background-color: white;
 }
 
-footer section input { 
-	appearance:none;
-	background-color:#EE4997;
+footer section input {
+	appearance: none;
+	background-color: #EE4997;
 }
 
 footer section label::selection {
 	background-color: #004329;
-	color:white; 
+	color: white;
 }
 
 
-footer section button :nth-of-type(3){
+footer section button 
+{
 	background-color: whitesmoke;
-	border: 2rem solid darkgray;
+	border: 2px solid darkgray;
 }
 
 
+footer label {
+	color:white;
+}
