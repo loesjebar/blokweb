@@ -138,21 +138,21 @@ Nog niet heel veel gedaan aan de code, vooral beziggeweest met je nav
 
   ### Agenda voor meeting
   samen met je groepje opstellen
+femma
+- mag ik nog wisselen naar responsive?
+- hoe doe ik foto's bij de productpagina
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+romy
+- vragen over product pagina
 
+nina
+- hoe zit het met de css op de tweede pagina?
+- hulp nodig bij video
 
+susan
+- vragen over li en svg
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+ Alles in mijn site zetten wwat ik nodig heb, breakdown schets maken en daaruit verder werken.
 
 </details>
 
@@ -180,29 +180,30 @@ Nog niet heel veel gedaan aan de code, vooral beziggeweest met je nav
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ 1e pagina al bijna klaar, nog paar kleine dingen toevoegen en groot begin gemaakt aan de tweede pagina. Moet nog veel animaties doen en uitzoeken hoe. 
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
    Femma:
-  - 
+  - wanneer alt en wanneer aria label?
 
-  - 
+  romy
+  - vragen over de alt tekst van de site, als het speelgoed is hoe maak ik dat duidelijk in de alt tekst?
 
 
   Nina: 
   - Is mijn formulier met email en naam genoeg? 
+  - pixels en ems
+
+  susan
+  - vragen over gesprek
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - dat mijn vragen niet dom zijn en juist goed was dat ik me daar mee bezig houdt
 </details>
 
 
@@ -219,14 +220,14 @@ Nog niet heel veel gedaan aan de code, vooral beziggeweest met je nav
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel meer geleerd dan ik dacht dat ikzou leren. Ik snap veel beter de opstelling van dingen en hoe ik dingen een beetje kan namaken en soms zelfs verbeteren. Vragen stellen is goed en zijn niet dom. Accessibility is belangrijk en niet zo moeilijk als het lijkt soms.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
+  Ik vind het soms lastig dingen aan te spreken omdat ik zo'n uitgebreidde css heb. Wat helpt om op inspecteren te klikken en dan via daar te kijken of ik het goed aanspreek. Javascript vind ik nog steeds heel lastig en daarheb ik dit blok dan ook niet veel mee gedaan. Ik vind het ook lastig om dingen terug te vinden in mijn code wat ik gemaakt heb en hoe maar door inspecteren en af een toe een comment erin te zetten helpt me dat wel verder.
+  Ik had graag in de toekomst misschien me ook een klein beetje willen richten op responsive, want dat is het nu helemaal niet. Dit vind ik niet heel erg want ik heb er niet voor gekozen. 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 

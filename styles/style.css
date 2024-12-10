@@ -291,6 +291,7 @@ color: #133B70;
 	padding: 1rem;
 	border-radius: 1rem;
 	color:white;
+	font-family: PetShopFont;
 }
 
 button:focus{
