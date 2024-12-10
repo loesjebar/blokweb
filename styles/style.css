@@ -12,7 +12,7 @@
 		height: auto;
 	}
 }
-
+/* hulp van eerste jaars */
 @keyframes draaiennn {
 	0% {
 		transform: rotate(0deg);
@@ -24,7 +24,7 @@
 		/* Draai de afbeelding 360 graden */
 	}
 }
-
+/* komt van bron: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect */
 @keyframes wiggle {
 
 	0% {
@@ -48,7 +48,6 @@
 	}
 }
 
-/*hulp van student assistent*/
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -96,6 +95,7 @@ a {
 p,
 h2 {
 	font-family: var(--lps-plain-text);
+	text-align: center;
 }
 
 h3 {
@@ -199,9 +199,7 @@ body>section article {
 	flex-direction: row;
 	/* Zorg ervoor dat de inhoud onder elkaar komt */
 	align-items: center;
-	/* Optioneel: centreer de inhoud horizontaal */
 	padding: 1rem;
-	/* Voeg wat padding toe om ruimte te creëren */
 }
 
 body>section article img {
@@ -224,37 +222,87 @@ body>section ul:nth-of-type(2) li:nth-of-type(4) a {
 
 body>section article button {
 	width: auto;
-	/* Laat de breedte van de knop automatisch bepalen op basis van de inhoud */
 	display: inline-flex;
-	/* Zorg ervoor dat de knop alleen zoveel ruimte inneemt als nodig */
 	align-items: center;
-	/* Centreer de inhoud binnen de knop */
 	justify-content: center;
-	/* Centreer het SVG-pictogram in de knop */
 	padding: 0.5rem;
-	/* Voeg wat padding toe om ruimte rond de knop te creëren */
 }
 
 body>section article button svg {
 	width: 2rem;
-	/* Stel de grootte van de SVG in (je kunt dit aanpassen naar behoefte) */
 	height: 2rem;
-	/* Zorg ervoor dat de hoogte van het SVG-pictogram dezelfde is als de breedte */
-	fill: rgb(0, 0, 0);
+	fill: black;
+}
+
+[class="tweedepagina"] {
+	background-color: #F4F4F7;
+}
+[class="tweedepagina"] section:first-of-type {
+	background: transparent;
+}
+
+[class="tweedepagina"] section img {
+	border-radius: 1rem;
+}
+
+[class="tweedepagina"] section h3 {
+	color: #2CA4C0;
+	font-weight: 700; 
+}
+[class="tweedepagina"] section h3 {
+	color: #2CA4C0;
+	font-weight: 700; 
+}
+[class="tweedepagina"] section h4 {
+font-weight: 900;
+font-size: 2rem;
+text-align: left;
+color: #133B70;
+}
+
+[class="tweedepagina"] section:nth-of-type(1) p{
+	margin: .5rem;
+}
+
+[class="tweedepagina"] section:nth-of-type(2) ul {
+	flex-direction: row;
+	gap: 1rem;
 }
 
 
-/****************/
-/* JOUW STYLING */
-/****************/
+[class="tweedepagina"] section:nth-of-type(2) ul li{
+	aspect-ratio: 1/1;
+	width: 6rem;
+	margin: 0;
+	padding: 0;
+}
 
-/* jouw code */
+
+[class="tweedepagina"] section:nth-of-type(1)  div {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+[class="tweedepagina"] section:nth-of-type(1) button {
+	width:100%;
+	display:block;
+	background-color:#EE4997;
+	padding: 1rem;
+	border-radius: 1rem;
+	color:white;
+}
+
+button:focus{
+background-color: pink;
+}
+
+
 
 header nav {
 	display: flex;
 	width: 100%;
 	background-color: white;
-	/* Lijnt alle children (items in de nav) horizontaal uit */
 	align-items: center;
 
 
@@ -274,7 +322,7 @@ header nav a:first-of-type img {
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/animation*/
 header nav a:nth-of-type(1) img {
 	animation: draaiennn 18s linear infinite;
-	/* De afbeelding draait elke 5 seconden continu */
+
 }
 
 /* sign in button*/
@@ -327,7 +375,6 @@ div h1:nth-of-type(2) {
 	font-family: PetShopFont;
 }
 
-/* hulp van studentassistent*/
 
 main h2:first-of-type {
 	color: #EE4997;
@@ -343,7 +390,7 @@ main section:first-of-type {
 }
 
 main section ul li {
-	/* om de p's en buttons onder elkaar en in het midden van de sections te positioneren */
+	
 	display: grid;
 	place-content: center;
 	gap: 1em;
@@ -400,8 +447,6 @@ main section:nth-of-type(3) ul {
 	align-items: center;
 }
 
-/* Anouk heeft me heel lief geholpen met dit stuk*/
-
 main section:nth-of-type(3) ul li {
 	display: flex;
 	flex-direction: column;
@@ -424,6 +469,7 @@ main section:nth-of-type(3) ul li a:first-of-type {
 	color: white;
 	text-align: center;
 	transition: background-color 0.3s;
+	font-family:PetShopFont ;
 }
 
 main section:nth-of-type(3) ul li a:first-of-type:hover {
@@ -442,9 +488,8 @@ footer {
 }
 
 footer {
-	--footer-bgcolor: #0D294F;
-	/* Lichte achtergrondkleur */
-	padding: 20px 0;
+	background-color: #0D294F;
+	padding: 20px;
 	font-family: Arial, sans-serif;
 	text-align: center;
 }
@@ -486,16 +531,9 @@ footer a {
 	text-decoration: none;
 }
 
-/* komt van bron: https://stackoverflow.com/questions/38132700/css-wiggle-shake-effect */
 
 
-/* [class="tweedepagina"] article {
-	width: 100vw;
-	padding: 1rem; 
-	border:3rem;
-	border-radius:solid;
-} */
-
+/* ali geleerd heo ik moet aanspreken */
 
 [class="tweedepagina"] ul {
 
@@ -553,6 +591,17 @@ li p h2 h3 {
 	text-align: left;
 
 }
+/* hulp van ali */
+button:focus {
+	outline: none;
+	animation: focusAnimation infinite 1s ;
+
+}
+
+a:focus {
+	animation: focusAnimation infinite 1s;
+	outline: none;
+}
 
 /* hulp van anouk*/
 footer section form {
@@ -562,7 +611,7 @@ footer section form {
 	align-items: center;
 	gap: .3em;
 }
-
+/* anoukje geholpen */
 footer section form label input:user-invalid {
 	background-color: red;
 }
@@ -595,4 +644,15 @@ footer section button
 
 footer label {
 	color:white;
+}
+/* ali geholpen */
+
+@keyframes focusAnimation {
+	from {
+		border: solid inherit 5px;
+	}
+	to {
+		border: solid blue 5px;
+
+	}
 }
