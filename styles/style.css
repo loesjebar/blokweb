@@ -332,7 +332,7 @@ header nav a:nth-of-type(2) {
 	padding: 0.5rem;
 	border-radius: .5rem;
 	border: solid var(--color-llp) 1px;
-
+	font-family: PettShopFont;
 }
 
 header nav button {
